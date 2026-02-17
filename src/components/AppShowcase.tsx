@@ -21,9 +21,9 @@ const screens = [
     description: "Filter by daily, weekly, or monthly bundles",
   },
   {
-    src: "/screenshots/transactions.png",
-    label: "Transaction History",
-    description: "Every naira accounted for, always",
+    src: "/screenshots/giftcard.png",
+    label: "Gift Cards",
+    description: "Trade gift cards for real cash, fast",
   },
 ];
 
