@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-heading: var(--font-sora), system-ui, sans-serif;
+
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #d9e2ff;
+  --color-primary-200: #bccaff;
+  --color-primary-300: #8ea6ff;
+  --color-primary-400: #6684ff;
+  --color-primary-500: #4361EE;
+  --color-primary-600: #3347d4;
+  --color-primary-700: #2a39b3;
+  --color-primary-800: #253193;
+  --color-primary-900: #222c72;
+  --color-primary-950: #151b45;
+
+  --color-accent-50: #edfcfd;
+  --color-accent-100: #d2f7fa;
+  --color-accent-200: #abeff4;
+  --color-accent-300: #7ae5ed;
+  --color-accent-400: #5CE1E6;
+  --color-accent-500: #38c9cf;
+  --color-accent-600: #2ba4a9;
+  --color-accent-700: #238388;
+  --color-accent-800: #1c6568;
+  --color-accent-900: #164d50;
+  --color-accent-950: #0d3133;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #111827;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5CE1E6;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7ae5ed;
+}
+
+/* Floating card animations */
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes floatDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Prevent iOS zoom on inputs */
+@media screen and (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
 }
