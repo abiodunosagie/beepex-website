@@ -23,17 +23,17 @@ export default function Hero() {
   }, [showVideo]);
 
   return (
-    <section className="relative bg-white overflow-hidden">
+    <section className="relative bg-white dark:bg-gray-950 overflow-hidden transition-colors duration-300">
       {/* Soft line grid */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 dark:opacity-40"
         style={{
           backgroundImage:
             "linear-gradient(to right, rgba(67,97,238,0.045) 1px, transparent 1px), linear-gradient(to bottom, rgba(67,97,238,0.045) 1px, transparent 1px)",
           backgroundSize: "48px 48px",
         }}
       />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,transparent_30%,white_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,transparent_30%,white_100%)] dark:bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,transparent_30%,#030712_100%)]" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-22 pb-10 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-8 items-center">
@@ -51,7 +51,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-[1.75rem] leading-[1.1] sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight sm:leading-[1.08] font-heading"
+              className="text-[1.75rem] leading-[1.1] sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white tracking-tight sm:leading-[1.08] font-heading"
             >
               Airtime. Bills.{" "}
               <br className="hidden sm:block" />
@@ -63,7 +63,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-500 leading-relaxed max-w-xl"
+              className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-500 dark:text-gray-400 leading-relaxed max-w-xl"
             >
               Stop switching between five apps for your daily transactions. Buy
               airtime, grab data, pay your light bill, and turn gift cards into
@@ -86,26 +86,26 @@ export default function Hero() {
               className="mt-8 sm:mt-12 flex gap-4 sm:gap-8 lg:gap-12"
             >
               <div>
-                <p className="text-lg sm:text-3xl font-bold text-gray-900 font-heading">
+                <p className="text-lg sm:text-3xl font-bold text-gray-900 dark:text-white font-heading">
                   50K+
                 </p>
-                <p className="text-xs sm:text-sm text-gray-400 mt-0.5 sm:mt-1">
+                <p className="text-xs sm:text-sm text-gray-400 dark:text-gray-500 mt-0.5 sm:mt-1">
                   Monthly transactions
                 </p>
               </div>
               <div>
-                <p className="text-lg sm:text-3xl font-bold text-gray-900 font-heading">
+                <p className="text-lg sm:text-3xl font-bold text-gray-900 dark:text-white font-heading">
                   &lt;30s
                 </p>
-                <p className="text-xs sm:text-sm text-gray-400 mt-0.5 sm:mt-1">
+                <p className="text-xs sm:text-sm text-gray-400 dark:text-gray-500 mt-0.5 sm:mt-1">
                   Most transactions
                 </p>
               </div>
               <div>
-                <p className="text-lg sm:text-3xl font-bold text-gray-900 font-heading">
+                <p className="text-lg sm:text-3xl font-bold text-gray-900 dark:text-white font-heading">
                   4.8
                 </p>
-                <p className="text-xs sm:text-sm text-gray-400 mt-0.5 sm:mt-1">App Store rating</p>
+                <p className="text-xs sm:text-sm text-gray-400 dark:text-gray-500 mt-0.5 sm:mt-1">App Store rating</p>
               </div>
             </motion.div>
           </div>
@@ -118,7 +118,7 @@ export default function Hero() {
           >
             <div className="relative">
               {/* Phone frame */}
-              <div className="relative w-[220px] sm:w-[280px] md:w-[300px] aspect-[9/19.5] rounded-[1.75rem] sm:rounded-[2.5rem] md:rounded-[3rem] border-[4px] sm:border-[5px] md:border-[6px] border-gray-900 bg-gray-900 shadow-2xl shadow-gray-900/20 overflow-hidden ring-1 ring-gray-900/5">
+              <div className="relative w-[220px] sm:w-[280px] md:w-[300px] aspect-[9/19.5] rounded-[1.75rem] sm:rounded-[2.5rem] md:rounded-[3rem] border-[4px] sm:border-[5px] md:border-[6px] border-gray-900 dark:border-gray-700 bg-gray-900 shadow-2xl shadow-gray-900/20 dark:shadow-black/40 overflow-hidden ring-1 ring-gray-900/5 dark:ring-gray-700/30">
                 <div
                   className={`absolute inset-0 z-10 transition-opacity duration-700 ${
                     showVideo ? "opacity-0" : "opacity-100"
@@ -152,30 +152,30 @@ export default function Hero() {
                 then float forever.
               */}
               <div
-                className="absolute -left-16 top-1/3 hidden lg:flex items-center gap-3 px-4 py-3 rounded-2xl bg-white shadow-lg shadow-gray-200/60 border border-gray-100 animate-[floatUp_4s_ease-in-out_infinite,fadeIn_0.6s_ease-out_0.8s_both]"
+                className="absolute -left-16 top-1/3 hidden lg:flex items-center gap-3 px-4 py-3 rounded-2xl bg-white dark:bg-gray-800 shadow-lg shadow-gray-200/60 dark:shadow-black/30 border border-gray-100 dark:border-gray-700 animate-[floatUp_4s_ease-in-out_infinite,fadeIn_0.6s_ease-out_0.8s_both]"
               >
-                <div className="w-10 h-10 rounded-full bg-accent-100 flex items-center justify-center">
-                  <span className="text-accent-700 text-sm font-bold">✓</span>
+                <div className="w-10 h-10 rounded-full bg-accent-100 dark:bg-accent-900/50 flex items-center justify-center">
+                  <span className="text-accent-700 dark:text-accent-400 text-sm font-bold">✓</span>
                 </div>
                 <div>
-                  <p className="text-gray-900 text-sm font-medium">
+                  <p className="text-gray-900 dark:text-gray-100 text-sm font-medium">
                     Airtime sent
                   </p>
-                  <p className="text-gray-400 text-xs">Just now</p>
+                  <p className="text-gray-400 dark:text-gray-500 text-xs">Just now</p>
                 </div>
               </div>
 
               <div
-                className="absolute -right-12 top-2/3 hidden lg:flex items-center gap-3 px-4 py-3 rounded-2xl bg-white shadow-lg shadow-gray-200/60 border border-gray-100 animate-[floatDown_5s_ease-in-out_infinite,fadeIn_0.6s_ease-out_1s_both]"
+                className="absolute -right-12 top-2/3 hidden lg:flex items-center gap-3 px-4 py-3 rounded-2xl bg-white dark:bg-gray-800 shadow-lg shadow-gray-200/60 dark:shadow-black/30 border border-gray-100 dark:border-gray-700 animate-[floatDown_5s_ease-in-out_infinite,fadeIn_0.6s_ease-out_1s_both]"
               >
-                <div className="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center">
-                  <span className="text-primary-600 text-sm font-bold">₦</span>
+                <div className="w-10 h-10 rounded-full bg-primary-50 dark:bg-primary-950/50 flex items-center justify-center">
+                  <span className="text-primary-600 dark:text-primary-400 text-sm font-bold">₦</span>
                 </div>
                 <div>
-                  <p className="text-gray-900 text-sm font-medium">
+                  <p className="text-gray-900 dark:text-gray-100 text-sm font-medium">
                     Gift card sold
                   </p>
-                  <p className="text-gray-400 text-xs">+₦15,000</p>
+                  <p className="text-gray-400 dark:text-gray-500 text-xs">+₦15,000</p>
                 </div>
               </div>
             </div>

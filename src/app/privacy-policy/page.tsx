@@ -19,11 +19,11 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Navbar />
-      <main className="pt-24 pb-16 sm:pt-36 sm:pb-28">
+      <main className="pt-24 pb-16 sm:pt-36 sm:pb-28 bg-white dark:bg-gray-950 transition-colors duration-300">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <Breadcrumb items={breadcrumbItems} />
           <p className="text-sm font-medium text-primary-500 mb-3 mt-4">Legal</p>
-          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight leading-[1.1] font-heading">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white tracking-tight leading-[1.1] font-heading">
             Privacy Policy
           </h1>
           <p className="mt-4 text-gray-400 text-sm">
@@ -32,18 +32,18 @@ export default function PrivacyPolicy() {
 
           <div className="mt-12 space-y-10">
             <section>
-              <h2 className="text-xl font-semibold text-gray-900 font-heading mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white font-heading mb-4">
                 1. Information We Collect
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
                 When you use Beepex, we collect certain information to provide
                 and improve our services. This includes:
               </p>
-              <ul className="space-y-3 text-gray-600 leading-relaxed">
+              <ul className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed">
                 <li className="flex gap-3">
                   <span className="text-primary-500 font-semibold shrink-0">a.</span>
                   <span>
-                    <strong className="text-gray-900">Account Information.</strong>{" "}
+                    <strong className="text-gray-900 dark:text-white">Account Information.</strong>{" "}
                     Your name, email address, phone number, and other details
                     you provide when creating an account.
                   </span>
@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
                 <li className="flex gap-3">
                   <span className="text-primary-500 font-semibold shrink-0">b.</span>
                   <span>
-                    <strong className="text-gray-900">Transaction Data.</strong>{" "}
+                    <strong className="text-gray-900 dark:text-white">Transaction Data.</strong>{" "}
                     Records of your transactions, including airtime purchases,
                     bill payments, gift card trades, and wallet activity.
                   </span>
@@ -59,7 +59,7 @@ export default function PrivacyPolicy() {
                 <li className="flex gap-3">
                   <span className="text-primary-500 font-semibold shrink-0">c.</span>
                   <span>
-                    <strong className="text-gray-900">Device Information.</strong>{" "}
+                    <strong className="text-gray-900 dark:text-white">Device Information.</strong>{" "}
                     Device type, operating system, app version, and unique
                     device identifiers to ensure security and optimize your
                     experience.
@@ -68,7 +68,7 @@ export default function PrivacyPolicy() {
                 <li className="flex gap-3">
                   <span className="text-primary-500 font-semibold shrink-0">d.</span>
                   <span>
-                    <strong className="text-gray-900">Usage Data.</strong>{" "}
+                    <strong className="text-gray-900 dark:text-white">Usage Data.</strong>{" "}
                     How you interact with the app, including features used,
                     pages visited, and session duration.
                   </span>
@@ -77,13 +77,13 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-gray-900 font-heading mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white font-heading mb-4">
                 2. How We Use Your Information
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
                 We use your information to:
               </p>
-              <ul className="space-y-2 text-gray-600 leading-relaxed list-disc list-inside">
+              <ul className="space-y-2 text-gray-600 dark:text-gray-400 leading-relaxed list-disc list-inside">
                 <li>Process your transactions and deliver services you request</li>
                 <li>Verify your identity and prevent fraud</li>
                 <li>Send you transaction confirmations and receipts</li>
@@ -94,10 +94,10 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-gray-900 font-heading mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white font-heading mb-4">
                 3. How We Protect Your Information
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 We take the security of your data seriously. All sensitive
                 information is encrypted in transit using TLS and at rest using
                 industry-standard encryption. We implement access controls,
@@ -109,14 +109,14 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-gray-900 font-heading mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white font-heading mb-4">
                 4. Information Sharing
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
                 We do not sell your personal information. We may share your data
                 only in the following situations:
               </p>
-              <ul className="space-y-2 text-gray-600 leading-relaxed list-disc list-inside">
+              <ul className="space-y-2 text-gray-600 dark:text-gray-400 leading-relaxed list-disc list-inside">
                 <li>
                   With payment processors and service providers necessary to
                   complete your transactions (e.g., Paystack, VTPass, Reloadly)
@@ -135,10 +135,10 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-gray-900 font-heading mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white font-heading mb-4">
                 5. Data Retention
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 We retain your personal information for as long as your account
                 is active or as needed to provide you with our services. If you
                 close your account, we will delete or anonymize your personal
@@ -148,20 +148,20 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-gray-900 font-heading mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white font-heading mb-4">
                 6. Your Rights
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
                 You have the right to:
               </p>
-              <ul className="space-y-2 text-gray-600 leading-relaxed list-disc list-inside">
+              <ul className="space-y-2 text-gray-600 dark:text-gray-400 leading-relaxed list-disc list-inside">
                 <li>Access the personal data we hold about you</li>
                 <li>Request correction of inaccurate information</li>
                 <li>Request deletion of your account and associated data</li>
                 <li>Withdraw consent for optional data processing</li>
                 <li>Export your transaction history</li>
               </ul>
-              <p className="text-gray-600 leading-relaxed mt-4">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mt-4">
                 To exercise any of these rights, contact us at{" "}
                 <a
                   href="mailto:supportbeepex@gmail.com"
@@ -174,10 +174,10 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-gray-900 font-heading mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white font-heading mb-4">
                 7. Cookies and Tracking
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 Our mobile app does not use cookies. Our website may use
                 essential cookies to maintain basic functionality and analytics
                 cookies to understand how visitors use the site. We do not use
@@ -186,10 +186,10 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-gray-900 font-heading mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white font-heading mb-4">
                 8. Third-Party Services
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 Our app integrates with third-party services to process
                 payments and deliver services. These providers have their own
                 privacy policies governing how they handle your data. We
@@ -200,10 +200,10 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-gray-900 font-heading mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white font-heading mb-4">
                 9. Children&apos;s Privacy
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 Beepex is not intended for children under the age of 18. We do
                 not knowingly collect personal information from anyone under 18.
                 If we discover that we have collected data from a minor, we will
@@ -212,10 +212,10 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-gray-900 font-heading mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white font-heading mb-4">
                 10. Changes to This Policy
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 We may update this Privacy Policy from time to time. When we
                 make significant changes, we will notify you through the app or
                 via email. Your continued use of Beepex after any changes
@@ -224,10 +224,10 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-gray-900 font-heading mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white font-heading mb-4">
                 11. Contact Us
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 If you have questions about this Privacy Policy or how we handle
                 your data, reach out to us at{" "}
                 <a

@@ -26,13 +26,13 @@ export default function StoreButtons({ variant = "dark" }: StoreButtonsProps) {
   const isDark = variant === "dark";
 
   return (
-    <div className="flex flex-col sm:flex-row gap-3">
+    <div className="flex flex-row gap-2 sm:gap-3">
       <motion.a
         href="#"
         whileHover={{ scale: 1.03, y: -1 }}
         whileTap={{ scale: 0.97 }}
         transition={{ type: "spring", stiffness: 400, damping: 17 }}
-        className={`inline-flex items-center gap-2.5 sm:gap-3 px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl transition-colors ${
+        className={`flex-1 sm:flex-initial inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2.5 sm:py-3 rounded-xl transition-colors ${
           isDark
             ? "bg-white text-gray-900 hover:bg-gray-100"
             : "bg-gray-900 text-white hover:bg-gray-800"
@@ -52,7 +52,7 @@ export default function StoreButtons({ variant = "dark" }: StoreButtonsProps) {
         whileHover={{ scale: 1.03, y: -1 }}
         whileTap={{ scale: 0.97 }}
         transition={{ type: "spring", stiffness: 400, damping: 17 }}
-        className={`inline-flex items-center gap-2.5 sm:gap-3 px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl transition-colors ${
+        className={`flex-1 sm:flex-initial inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2.5 sm:py-3 rounded-xl transition-colors ${
           isDark
             ? "bg-white text-gray-900 hover:bg-gray-100"
             : "bg-gray-900 text-white hover:bg-gray-800"

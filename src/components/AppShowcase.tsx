@@ -29,16 +29,16 @@ const screens = [
 
 export default function AppShowcase() {
   return (
-    <section className="py-16 sm:py-20 lg:py-28 bg-gray-50">
+    <section className="py-16 sm:py-20 lg:py-28 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <p className="text-sm font-medium text-primary-500 mb-3">
             Inside the app
           </p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight font-heading max-w-md">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white tracking-tight font-heading max-w-md">
             See It for Yourself
           </h2>
-          <p className="mt-4 text-gray-500 leading-relaxed max-w-lg">
+          <p className="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed max-w-lg">
             Clean screens, zero clutter. Every feature is exactly where you
             expect it to be. No tutorials needed.
           </p>
@@ -54,7 +54,7 @@ export default function AppShowcase() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="group"
             >
-              <div className="relative aspect-[9/19.5] rounded-[1.25rem] sm:rounded-[2rem] lg:rounded-[2.5rem] border-[4px] sm:border-[5px] lg:border-[6px] border-gray-900 bg-gray-900 overflow-hidden shadow-xl shadow-gray-900/15 group-hover:shadow-2xl group-hover:shadow-gray-900/20 transition-all duration-300 group-hover:-translate-y-1 ring-1 ring-gray-900/5">
+              <div className="relative aspect-[9/19.5] rounded-[1.25rem] sm:rounded-[2rem] lg:rounded-[2.5rem] border-[4px] sm:border-[5px] lg:border-[6px] border-gray-900 dark:border-gray-700 bg-gray-900 overflow-hidden shadow-xl shadow-gray-900/15 dark:shadow-black/30 group-hover:shadow-2xl group-hover:shadow-gray-900/20 dark:group-hover:shadow-black/40 transition-all duration-300 group-hover:-translate-y-1 ring-1 ring-gray-900/5 dark:ring-gray-700/30">
                 <Image
                   src={screen.src}
                   alt={screen.description}
@@ -63,10 +63,10 @@ export default function AppShowcase() {
                 />
               </div>
               <div className="mt-2 sm:mt-4">
-                <p className="text-xs sm:text-sm font-semibold text-gray-900 font-heading">
+                <p className="text-xs sm:text-sm font-semibold text-gray-900 dark:text-white font-heading">
                   {screen.label}
                 </p>
-                <p className="text-[11px] sm:text-sm text-gray-500 mt-0.5 leading-snug">
+                <p className="text-[11px] sm:text-sm text-gray-500 dark:text-gray-400 mt-0.5 leading-snug">
                   {screen.description}
                 </p>
               </div>

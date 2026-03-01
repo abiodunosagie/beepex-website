@@ -47,21 +47,21 @@ function FAQItem({ faq, index }: { faq: (typeof faqs)[0]; index: number }) {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.4, delay: index * 0.06 }}
-      className="border-b border-gray-200"
+      className="border-b border-gray-200 dark:border-gray-800"
     >
       <button
         onClick={() => setOpen(!open)}
         className="w-full py-6 sm:py-8 flex items-start justify-between gap-4 text-left cursor-pointer"
       >
         <div className="flex items-start gap-3 sm:gap-6">
-          <span className="text-xs font-medium text-gray-400 pt-0.5 sm:pt-1 tabular-nums shrink-0">
+          <span className="text-xs font-medium text-gray-400 dark:text-gray-500 pt-0.5 sm:pt-1 tabular-nums shrink-0">
             {String(index + 1).padStart(2, "0")}
           </span>
-          <h3 className="text-base sm:text-lg font-semibold text-gray-900 font-heading">
+          <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white font-heading">
             {faq.question}
           </h3>
         </div>
-        <span className="shrink-0 mt-1 text-gray-400">
+        <span className="shrink-0 mt-1 text-gray-400 dark:text-gray-500">
           {open ? (
             <Minus className="w-4 h-4" />
           ) : (
@@ -78,7 +78,7 @@ function FAQItem({ faq, index }: { faq: (typeof faqs)[0]; index: number }) {
             transition={{ duration: 0.2, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <p className="pb-5 sm:pb-8 pl-7 sm:pl-14 text-sm sm:text-base text-gray-500 leading-relaxed max-w-lg">
+            <p className="pb-5 sm:pb-8 pl-7 sm:pl-14 text-sm sm:text-base text-gray-500 dark:text-gray-400 leading-relaxed max-w-lg">
               {faq.answer}
             </p>
           </motion.div>
@@ -90,7 +90,7 @@ function FAQItem({ faq, index }: { faq: (typeof faqs)[0]; index: number }) {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-16 sm:py-20 lg:py-28 bg-white">
+    <section id="faq" className="py-16 sm:py-20 lg:py-28 bg-white dark:bg-gray-950 transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr,1.5fr] gap-8 lg:gap-20">
           <AnimatedSection>
@@ -98,10 +98,10 @@ export default function FAQ() {
               <p className="text-sm font-medium text-primary-500 mb-3">
                 Common questions
               </p>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight font-heading">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white tracking-tight font-heading">
                 The Stuff You Actually Want to Know
               </h2>
-              <p className="mt-4 text-gray-500 leading-relaxed max-w-sm">
+              <p className="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed max-w-sm">
                 Straight answers to the questions people ask before they
                 download. Still curious? Hit us up directly.
               </p>
@@ -115,7 +115,7 @@ export default function FAQ() {
             </div>
           </AnimatedSection>
 
-          <div className="border-t border-gray-200">
+          <div className="border-t border-gray-200 dark:border-gray-800">
             {faqs.map((faq, i) => (
               <FAQItem key={faq.question} faq={faq} index={i} />
             ))}

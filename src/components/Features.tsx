@@ -38,7 +38,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-16 sm:py-20 lg:py-28 bg-white">
+    <section id="features" className="py-16 sm:py-20 lg:py-28 bg-white dark:bg-gray-950 transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr,1.5fr] gap-8 lg:gap-20">
           <AnimatedSection>
@@ -46,10 +46,10 @@ export default function Features() {
               <p className="text-sm font-medium text-primary-500 mb-3">
                 What Beepex does
               </p>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight font-heading">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white tracking-tight font-heading">
                 Six Things, One Dashboard
               </h2>
-              <p className="mt-4 text-gray-500 leading-relaxed max-w-sm">
+              <p className="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed max-w-sm">
                 Every feature you need for daily transactions. Nothing you
                 don&apos;t. Each one built to save you time and keep your money
                 safe.
@@ -57,7 +57,7 @@ export default function Features() {
             </div>
           </AnimatedSection>
 
-          <div className="border-t border-gray-200">
+          <div className="border-t border-gray-200 dark:border-gray-800">
             {features.map((feature, i) => (
               <motion.div
                 key={feature.title}
@@ -65,17 +65,17 @@ export default function Features() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.4, delay: i * 0.06 }}
-                className="group py-6 sm:py-8 border-b border-gray-200"
+                className="group py-6 sm:py-8 border-b border-gray-200 dark:border-gray-800"
               >
                 <div className="flex items-start gap-3 sm:gap-6">
-                  <span className="text-xs font-medium text-gray-400 pt-1.5 tabular-nums shrink-0">
+                  <span className="text-xs font-medium text-gray-400 dark:text-gray-500 pt-1.5 tabular-nums shrink-0">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 font-heading">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-2 font-heading">
                       {feature.title}
                     </h3>
-                    <p className="text-sm sm:text-base text-gray-500 leading-relaxed max-w-lg">
+                    <p className="text-sm sm:text-base text-gray-500 dark:text-gray-400 leading-relaxed max-w-lg">
                       {feature.description}
                     </p>
                   </div>
