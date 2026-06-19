@@ -48,7 +48,9 @@ export default function StoreButtons({ variant = "dark" }: StoreButtonsProps) {
       </motion.a>
 
       <motion.a
-        href="#"
+        href="https://play.google.com/store/apps/details?id=com.beepexapp"
+        target="_blank"
+        rel="noopener noreferrer"
         whileHover={{ scale: 1.03, y: -1 }}
         whileTap={{ scale: 0.97 }}
         transition={{ type: "spring", stiffness: 400, damping: 17 }}
