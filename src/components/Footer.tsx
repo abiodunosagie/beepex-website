@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import ThemeSwitch from "./ThemeSwitch";
 
 const footerLinks = {
   product: [
@@ -44,6 +45,12 @@ export default function Footer() {
             <p className="text-sm text-gray-600 mt-4">
               supportbeepex@gmail.com
             </p>
+            <div className="mt-6">
+              <p className="text-xs font-medium text-gray-400 uppercase tracking-wider mb-3">
+                Theme
+              </p>
+              <ThemeSwitch />
+            </div>
           </div>
 
           <div>

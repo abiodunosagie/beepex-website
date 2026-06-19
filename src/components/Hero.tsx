@@ -63,7 +63,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-500 dark:text-gray-400 leading-relaxed max-w-xl"
+              className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl"
             >
               Stop switching between five apps for your daily transactions. Buy
               airtime, grab data, pay your light bill, and turn gift cards into
@@ -89,7 +89,7 @@ export default function Hero() {
                 <p className="text-lg sm:text-3xl font-bold text-gray-900 dark:text-white font-heading">
                   50K+
                 </p>
-                <p className="text-xs sm:text-sm text-gray-400 dark:text-gray-500 mt-0.5 sm:mt-1">
+                <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-0.5 sm:mt-1">
                   Monthly transactions
                 </p>
               </div>
@@ -97,7 +97,7 @@ export default function Hero() {
                 <p className="text-lg sm:text-3xl font-bold text-gray-900 dark:text-white font-heading">
                   &lt;30s
                 </p>
-                <p className="text-xs sm:text-sm text-gray-400 dark:text-gray-500 mt-0.5 sm:mt-1">
+                <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-0.5 sm:mt-1">
                   Most transactions
                 </p>
               </div>
@@ -105,7 +105,7 @@ export default function Hero() {
                 <p className="text-lg sm:text-3xl font-bold text-gray-900 dark:text-white font-heading">
                   4.8
                 </p>
-                <p className="text-xs sm:text-sm text-gray-400 dark:text-gray-500 mt-0.5 sm:mt-1">App Store rating</p>
+                <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-0.5 sm:mt-1">App Store rating</p>
               </div>
             </motion.div>
           </div>
@@ -161,7 +161,7 @@ export default function Hero() {
                   <p className="text-gray-900 dark:text-gray-100 text-sm font-medium">
                     Airtime sent
                   </p>
-                  <p className="text-gray-400 dark:text-gray-500 text-xs">Just now</p>
+                  <p className="text-gray-500 dark:text-gray-400 text-xs">Just now</p>
                 </div>
               </div>
 
@@ -175,7 +175,7 @@ export default function Hero() {
                   <p className="text-gray-900 dark:text-gray-100 text-sm font-medium">
                     Gift card sold
                   </p>
-                  <p className="text-gray-400 dark:text-gray-500 text-xs">+₦15,000</p>
+                  <p className="text-gray-500 dark:text-gray-400 text-xs">+₦15,000</p>
                 </div>
               </div>
             </div>

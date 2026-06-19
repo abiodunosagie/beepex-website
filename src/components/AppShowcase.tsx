@@ -38,7 +38,7 @@ export default function AppShowcase() {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white tracking-tight font-heading max-w-md">
             See It for Yourself
           </h2>
-          <p className="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed max-w-lg">
+          <p className="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg">
             Clean screens, zero clutter. Every feature is exactly where you
             expect it to be. No tutorials needed.
           </p>
@@ -66,7 +66,7 @@ export default function AppShowcase() {
                 <p className="text-xs sm:text-sm font-semibold text-gray-900 dark:text-white font-heading">
                   {screen.label}
                 </p>
-                <p className="text-[11px] sm:text-sm text-gray-500 dark:text-gray-400 mt-0.5 leading-snug">
+                <p className="text-[11px] sm:text-sm text-gray-600 dark:text-gray-400 mt-0.5 leading-snug">
                   {screen.description}
                 </p>
               </div>

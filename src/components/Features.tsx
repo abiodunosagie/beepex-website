@@ -49,7 +49,7 @@ export default function Features() {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white tracking-tight font-heading">
                 Six Things, One Dashboard
               </h2>
-              <p className="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed max-w-sm">
+              <p className="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed max-w-sm">
                 Every feature you need for daily transactions. Nothing you
                 don&apos;t. Each one built to save you time and keep your money
                 safe.
@@ -68,14 +68,14 @@ export default function Features() {
                 className="group py-6 sm:py-8 border-b border-gray-200 dark:border-gray-800"
               >
                 <div className="flex items-start gap-3 sm:gap-6">
-                  <span className="text-xs font-medium text-gray-400 dark:text-gray-500 pt-1.5 tabular-nums shrink-0">
+                  <span className="text-xs font-medium text-gray-500 dark:text-gray-400 pt-1.5 tabular-nums shrink-0">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-2 font-heading">
                       {feature.title}
                     </h3>
-                    <p className="text-sm sm:text-base text-gray-500 dark:text-gray-400 leading-relaxed max-w-lg">
+                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg">
                       {feature.description}
                     </p>
                   </div>

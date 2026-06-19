@@ -54,14 +54,14 @@ function FAQItem({ faq, index }: { faq: (typeof faqs)[0]; index: number }) {
         className="w-full py-6 sm:py-8 flex items-start justify-between gap-4 text-left cursor-pointer"
       >
         <div className="flex items-start gap-3 sm:gap-6">
-          <span className="text-xs font-medium text-gray-400 dark:text-gray-500 pt-0.5 sm:pt-1 tabular-nums shrink-0">
+          <span className="text-xs font-medium text-gray-500 dark:text-gray-400 pt-0.5 sm:pt-1 tabular-nums shrink-0">
             {String(index + 1).padStart(2, "0")}
           </span>
           <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white font-heading">
             {faq.question}
           </h3>
         </div>
-        <span className="shrink-0 mt-1 text-gray-400 dark:text-gray-500">
+        <span className="shrink-0 mt-1 text-gray-500 dark:text-gray-400">
           {open ? (
             <Minus className="w-4 h-4" />
           ) : (
@@ -78,7 +78,7 @@ function FAQItem({ faq, index }: { faq: (typeof faqs)[0]; index: number }) {
             transition={{ duration: 0.2, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <p className="pb-5 sm:pb-8 pl-7 sm:pl-14 text-sm sm:text-base text-gray-500 dark:text-gray-400 leading-relaxed max-w-lg">
+            <p className="pb-5 sm:pb-8 pl-7 sm:pl-14 text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg">
               {faq.answer}
             </p>
           </motion.div>
@@ -101,7 +101,7 @@ export default function FAQ() {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white tracking-tight font-heading">
                 The Stuff You Actually Want to Know
               </h2>
-              <p className="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed max-w-sm">
+              <p className="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed max-w-sm">
                 Straight answers to the questions people ask before they
                 download. Still curious? Hit us up directly.
               </p>

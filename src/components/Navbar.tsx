@@ -2,10 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowUpRight, Sun, Moon } from "lucide-react";
+import { Menu, X, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useTheme } from "./ThemeProvider";
 
 const navLinks = [
   { label: "Features", href: "#features" },
@@ -17,7 +16,6 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -77,17 +75,6 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <button
-                onClick={toggleTheme}
-                className="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer"
-                aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-              >
-                {theme === "dark" ? (
-                  <Sun className="w-4 h-4" />
-                ) : (
-                  <Moon className="w-4 h-4" />
-                )}
-              </button>
               <a
                 href="#download"
                 className="inline-flex items-center gap-1.5 px-4 lg:px-5 py-2 lg:py-2.5 rounded-xl bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-semibold hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors whitespace-nowrap"
@@ -98,17 +85,6 @@ export default function Navbar() {
             </div>
 
             <div className="flex items-center gap-1 md:hidden">
-              <button
-                onClick={toggleTheme}
-                className="p-2.5 rounded-lg text-gray-900 dark:text-white transition-colors cursor-pointer"
-                aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-              >
-                {theme === "dark" ? (
-                  <Sun className="w-5 h-5" />
-                ) : (
-                  <Moon className="w-5 h-5" />
-                )}
-              </button>
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
                 className="p-2.5 -mr-2.5 rounded-lg text-gray-900 dark:text-white transition-colors cursor-pointer"
@@ -163,7 +139,7 @@ export default function Navbar() {
               </motion.a>
 
               <div className="mt-auto pt-8">
-                <p className="text-xs text-gray-400 dark:text-gray-500">supportbeepex@gmail.com</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400">supportbeepex@gmail.com</p>
               </div>
             </div>
           </motion.div>
